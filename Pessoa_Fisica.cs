@@ -4,5 +4,6 @@ namespace Atividade
     {
         public string cpf {get;set;}
         public string rg {get;set;}
+        public string dataDeNascimento {get;set;}
     }
 }

@@ -22,18 +22,21 @@ if(var_tipo == "f")
     pf.cpf = Console.ReadLine();
     Console.WriteLine("Informar RG:");
     pf.rg = Console.ReadLine();
+    Console.WriteLine("informar data de nascimento:");
+    pf.dataDeNascimento = Console.ReadLine(); ;
     Console.WriteLine("Informar valor de Compra:");
     val_pag = float.Parse (Console.ReadLine());
     pf.Pagar_Imposto(val_pag);
     Console.WriteLine ("------Pessoa Física------");
 
-    Console.WriteLine ("Nome...........:" + pf.nome);
-    Console.WriteLine ("Endereço.......:" + pf.endereco );
-    Console.WriteLine ("CPF............:" + pf.cpf);
-    Console.WriteLine ("RG.............:" + pf.rg);
-    Console.WriteLine ("valor de compra:" + pf.valor.ToString("C"));
-    Console.WriteLine ("Imposto........:" + pf.valor_imposto.ToString("C"));
-    Console.WriteLine ("Total a Pagar  :" + pf.total.ToString("C"));
+    Console.WriteLine ("Nome..............:" + pf.nome);
+    Console.WriteLine ("Endereço..........:" + pf.endereco );
+    Console.WriteLine ("CPF...............:" + pf.cpf);
+    Console.WriteLine ("RG................:" + pf.rg);
+    Console.WriteLine ("data de nascimento:" + pf.dataDeNascimento);
+    Console.WriteLine ("valor de compra...:" + pf.valor.ToString("C"));
+    Console.WriteLine ("Imposto...........:" + pf.valor_imposto.ToString("C"));
+    Console.WriteLine ("Total a Pagar.....:" + pf.total.ToString("C"));
 }
 if(var_tipo== "j")
 {
